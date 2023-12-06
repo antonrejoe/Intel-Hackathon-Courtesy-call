@@ -143,43 +143,16 @@ Required installation
 ```pip install faiss-cpu streamlit langchain huggingface_hub sentence_transformers pypdf peft streamlit_option_menu auto-gptq optimum diffusers```
 
 clone repository
-```   ```
 
-# Inferencing our Fine tuned model 
-GPU is required to get necessary installation and get simple inference 
-  ```
-def process_data_sample(example):
- processed_example = "<|system|>\n You are document sumarizer who is going to sumarise the content without missing any keypoints in a concise manner.truncate the input if it it beyond length you can handle.always give a complete sentence which makes sense and inform how much word you can handle.</s>\n<|user|>\n" + example["instruction"] + "</s>\n<|assistant|>\n"
-
-    return processed_example
-tokenizer = AutoTokenizer.from_pretrained("/content/drive/MyDrive/intel hackathon/sample2")
-sentence='''
-appeal no. lxvi of 1949. appeal from the high court of judicature, bombay, in a reference under section 66 of the indian income tax act, 1022. k.m. munshi (n. p. nathvani, with him), for the appel lant. ' m.c. setalvad, attorney general for india (h. j. umrigar, with him), for the respondent. 1950. may 26. the judgment of the court was delivered by mehr chand mahajan j. this is an appeal against a judgment of the high court of judicature at bombay in an income tax matter and it raises the question whether munici pal property tax and urban immoveable property tax payable under the relevant bombay acts are allowable deductions under section 9 (1) (iv) of the indian income tax act. the assessee company is an investment company deriving its income from properties in the city of bombay. for the assessment year 1940 41 the net income of the assessee under the head "property" was computed by the income tax officer in the sum of rs. 6,21,764 after deducting from gross rents certain payments. the company had paid during the relevant year rs. 1,22,675 as municipal property tax and rs. 32,760 as urban property tax. deduction of these two sums was claimed under the provisions of section 9 the act. out of the first item a deduction in the sum of rs. 48,572 was allowed on the ground that this item represented tenants ' burdens paid by the assessee, otherwise the claim was disal lowed. the, appeals of the assessee to the appellate as sistant commissioner and to the income tax appellate tribu nal were unsuccessful. the tribunal, however, agreed to refer two questions of law to the high court of judicature at bombay, namely, (1) whether the municipal taxes paid by the applicant company are an allowable deduction under 555 the provisions of section 9 (1) (iv) of the indian income tax act; (2) whether the urban immoveable property taxes paid by the applicant company are an allowable deduction under section 9 (1) (iv) or under section 9 (1) (v) of the indian income tax act. a supplementary reference was made covering a third question which was not raised before us and it is not there fore necessary to refer to it. the high court answered all the three questions in the negative and hence this appeal. the question for our determination is whether the munic ipal property tax and urban immoveable property tax can be deducted as an allowance under clause (iv) of sub section (1) of section 9 of the act. the decision of the point depends firstly on the construction of the language employed in sub clause (iv) of sub section (1) of section 9 of the act, and secondly, on a finding as to the true nature and character of the liability of the owner under the relevant bombay acts for the payment of these taxes. section 9 along with the relevant clause runs thus: (1) the tax shall be payable by an assessee under the head ' income from property ' in respect of the bona fide annual value of property consisting of any buildings or lands appurtenant thereto of which he is the owner, . . subject to the following allowances, namely : (iv) where the property is subject to a mortgage or other capital charge, the amount of any interest on such mortgage or charge; where the property is subject to an annual charge not being a capital charge, the. amount of such charge; where the property is subject to a ground rent, the amount of such ground rent; and, where the property has been acquired, constructed, repaired, renewed or recon structed with borrowed capital, the amount of any interest payable on such capital; . . . " it will be seen that clause (iv) consists of four sub clauses corresponding to the four deductions allowed 556 under the clause. before the amending act of 1939, clause (iv) contained only the first, third and fourth sub clauses. under the first sub clause interest is deductible whether the amount borrowed on the security of the property was spent on the property or not
-'''
-inp_str = process_data_sample(
-    {
-        "instruction": sentence,
-    }
-)
-
-inputs = tokenizer(inp_str, return_tensors="pt").to("cuda")
-
-model = AutoPeftModelForCausalLM.from_pretrained(
-    "/content/drive/MyDrive/intel hackathon/sample2",
-    low_cpu_mem_usage=True,
-    return_dict=True,
-    torch_dtype=torch.float16,
-    device_map="cuda")
-
-generation_config = GenerationConfig(
-    do_sample=True,
-    top_k=1,
-    temperature=0.1,
-    max_new_tokens=256,
-    pad_token_id=tokenizer.eos_token_id
-)
+``` 
+https://github.com/Sriram-code/Intel-Hackathon
 ```
+
 
 # Application
 Built using streamlit
+
 ``` streamlit run demo.py ```
+set the path of demo.py from hackathon folder
+
+
