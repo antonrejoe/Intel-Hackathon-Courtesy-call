@@ -2,6 +2,17 @@
 Team Name: Architects of Future
 Team Leader Email:irul.mathi1@wipro.com
 Enlightening Justice: Leveraging LLM and AI Analytics Toolkit for Legal support in intel oneAPI AI analytics toolkit Hackathon
+Trained models
+
+```
+git lfs install
+git clone https://huggingface.co/sriramahesh2000/sample2
+
+```
+```
+git lfs install
+git clone https://huggingface.co/sriramahesh2000/simple1
+```
 
 # Problem Statement
 For legal professionals, staying updated with the latest laws and judgments can be a challenging task. According to LexusNexus research, nearly 65 percent of a lawyer's time is dedicated solely to legal research on relevant laws. Additionally, grappling with lengthy verdicts and chargesheets is a time-consuming and arduous process. The preparation of legal documents is also a taxing task that demands meticulous attention. In response to these challenges, we have undertaken a project to develop a smart Legal Language Model (LLM) fine-tuned on legal data, capable of addressing the aforementioned issues. This article will provide an in-depth exploration of our project, highlighting key components and technologies that have facilitated the development of an effective solution.
