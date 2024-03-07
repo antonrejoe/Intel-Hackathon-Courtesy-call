@@ -1,18 +1,9 @@
 # Intel-Hackathon 
-Team Name: Architects of Future
-Team Leader Email:irul.mathi1@wipro.com
+Team Name:Courtesy Call
+Team Leader Email:cb.en.u4ece22009@cb.students.amrita.edu
 Enlightening Justice: Leveraging LLM and AI Analytics Toolkit for Legal support in intel oneAPI AI analytics toolkit Hackathon
 Trained models
 
-```
-git lfs install
-git clone https://huggingface.co/sriramahesh2000/sample2
-
-```
-```
-git lfs install
-git clone https://huggingface.co/sriramahesh2000/simple1
-```
 
 # Problem Statement
 For legal professionals, staying updated with the latest laws and judgments can be a challenging task. According to LexusNexus research, nearly 65 percent of a lawyer's time is dedicated solely to legal research on relevant laws. Additionally, grappling with lengthy verdicts and chargesheets is a time-consuming and arduous process. The preparation of legal documents is also a taxing task that demands meticulous attention. In response to these challenges, we have undertaken a project to develop a smart Legal Language Model (LLM) fine-tuned on legal data, capable of addressing the aforementioned issues. This article will provide an in-depth exploration of our project, highlighting key components and technologies that have facilitated the development of an effective solution.
@@ -136,17 +127,6 @@ Thecode for finetuning dataset are attached.
 In conclusion, "Enlightening Justice" not only showcases the transformative power of AI and the Intel OneAPI AI Analytics Toolkit in the legal domain but also highlights the resilience of the team in overcoming challenges. The successful creation of a Smart Legal Companion, Advanced Document Summarization System, and Legal Document Generator underscores the project's positive impact on legal professionals. Despite setbacks, the project's adaptability and forward-thinking approach ensure a promising trajectory for future advancements, marking a significant step toward revolutionizing legal support through cutting-edge technology and innovative solutions.
 
 
-# Quick Steps
-
-Required installation
-
-```pip install faiss-cpu streamlit langchain huggingface_hub sentence_transformers pypdf peft streamlit_option_menu auto-gptq optimum diffusers```
-
-clone repository
-
-``` 
-https://github.com/Sriram-code/Intel-Hackathon
-```
 
 
 # Application
