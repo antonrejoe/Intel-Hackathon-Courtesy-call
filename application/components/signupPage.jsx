@@ -2,10 +2,11 @@ import Layout from './layout'
 import { getCookie } from 'cookies-next';
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+// import { Route,router } from 'react-router';
 
 export default function SignupPage( {username} ) {
     const router = useRouter()
-    const { msg } = router.query
+    const { msg } = router.query 
     return (
         <Layout pageTitle="Signup">
             <Link href="/">Home</Link><br/>

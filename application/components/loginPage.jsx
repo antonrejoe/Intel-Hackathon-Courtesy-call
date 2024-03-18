@@ -22,7 +22,7 @@ async function getServerSideProps(context) {
 export default function LoginPage( {username} ) {
     username = getServerSideProps.username
     const router = useRouter()
-    const { msg } = router. 
+    const { msg } = router
     return (
         <Layout pageTitle="Login">
             <Link href="/">Home</Link><br/>
